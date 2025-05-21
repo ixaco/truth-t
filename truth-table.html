@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      table {
+        border-collapse: collapse;
+        margin: 0 auto;
+        margin-top: 80px;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 3.2px 9.4px;
+        text-align: center;
+      }
+      .true-value {
+        background-color: #90ee90;
+      }
+      .false-value {
+        background-color: #ffc7c7;
+      }
+      summary {
+        margin-top: 30px;
+        margin-left: 50px;
+        color: rgb(18, 0, 0);
+      }
+      .b {
+        margin-top: 30px;
+        margin-left: 60px;
+      }
+      h1 {
+        margin-left: 400px;
+        margin-top: 30px;
+      }
+      ol {
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <blockquote>
+      <h1>Truth table</h1>
+    </blockquote>
+    <table>
+      <thead>
+        <tr style="background-color: #eaecf0">
+          <th>P</th>
+          <th>Q</th>
+          <th>P ∧ Q</th>
+          <th>P ∨ Q</th>
+          <th>P ↑ Q</th>
+          <th>P ↓ Q</th>
+          <th>P ↔ Q</th>
+          <th>P ⊙ Q</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="true-value">T</td>
+          <td class="true-value">T</td>
+          <td class="true-value">T</td>
+          <td class="true-value">T</td>
+          <td class="false-value">F</td>
+          <td class="false-value">F</td>
+          <td class="false-value">F</td>
+          <td class="true-value">T</td>
+        </tr>
+        <tr>
+          <td class="true-value">T</td>
+          <td class="false-value">F</td>
+          <td class="false-value">F</td>
+          <td class="true-value">T</td>
+          <td class="true-value">T</td>
+          <td class="false-value">F</td>
+          <td class="true-value">T</td>
+          <td class="false-value">F</td>
+        </tr>
+        <tr>
+          <td class="false-value">F</td>
+          <td class="true-value">T</td>
+          <td class="false-value">F</td>
+          <td class="true-value">T</td>
+          <td class="true-value">T</td>
+          <td class="false-value">F</td>
+          <td class="true-value">T</td>
+          <td class="false-value">F</td>
+        </tr>
+        <tr>
+          <td class="false-value">F</td>
+          <td class="false-value">F</td>
+          <td class="false-value">F</td>
+          <td class="false-value">F</td>
+          <td class="true-value">T</td>
+          <td class="true-value">T</td>
+          <td class="false-value">F</td>
+          <td class="true-value">T</td>
+        </tr>
+      </tbody>
+    </table>
+    <ol>
+      <li>
+        <details>
+          <summary>
+            <b>AND</b>
+          </summary>
+          <ul>
+            <li class="b">
+              Agar kirish qiymatlarining bittasi <u>False</u> bo'lsa ham natija
+              ham <u>False</u>
+            </li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>
+            <b>OR</b>
+          </summary>
+          <ul>
+            <li class="b">
+              <p>
+                Agar kirish qiymatlaring bittasi <u>True</u> bo'lsa ham natija
+              </p>
+              <u>True</u>
+            </li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>
+            <b>NAND</b>
+          </summary>
+          <ul>
+            <li class="b">
+              <p>
+                Kirish qiymatlari <u>And</u> da hisoblanadi. Keyin qanday natija
+                chiqsa uning teskarisi bo'ladi. (<i
+                  >Ya'ni <u>True</u> natija chiqsa <u>False</u>,
+                  <u>False</u> natija chiqsa aksincha</i
+                >)
+              </p>
+            </li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>
+            <b>NOR</b>
+          </summary>
+          <ul>
+            <li class="b">
+              <p>
+                Kirish qiymatlari <u>OR</u> da hisoblanadi. Keyin qanday natija
+                chiqsa uning teskari qiymati bo'ladi.
+              </p>
+            </li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>
+            <b>XOR</b>
+          </summary>
+          <ul>
+            <li class="b">
+              <p>
+                Kirish qiymatlari bir biridan farq qilsa ya'ni biri
+                <u>True</u> biri <u>False</u> bo'lsa , natija
+                <u>True</u> bo'ladi. Aksincha o'xshash bo'lsa natija
+                <u>False</u> bo'ladi.
+              </p>
+            </li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>
+            <b>XNOR</b>
+          </summary>
+          <ul>
+            <li class="b">
+              <p>
+                Bunda esa qiymatlar o'xshash bo'lsa natija <u>True</u> .
+                Qiymatlar bir biridan farq qilsa natija <u>False</u> qiymatni
+                qabul qiladi.
+              </p>
+            </li>
+          </ul>
+        </details>
+      </li>
+    </ol>
+    <marquee behavior="" direction="">Xa otam nima bo'lyabdi!!!</marquee>
+  </body>
+</html>
